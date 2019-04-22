@@ -1,21 +1,8 @@
 package deck
 
 import (
-	"fmt"
 	"testing"
 )
-
-func ExampleCard() {
-	fmt.Println(Card{Diamond, Ace})
-	fmt.Println(Card{Club, King})
-	fmt.Println(Card{Spade, Three})
-	fmt.Println(Card{Heart, Queen})
-	// Output:
-	// Ace of Diamonds
-	// King of Clubs
-	// Three of Spades
-	// Queen of Hearts
-}
 
 func TestNew(t *testing.T) {
 	deck := New()
